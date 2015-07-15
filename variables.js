@@ -1,92 +1,92 @@
 /**
  * Created by Jared on 7/8/2015.
  */
-    var skill={
-        start:{
-            sosh:{
-                dem:{
-                    posur:0,
-                    elegy:0,
-                    presc:0
-                },
-                con:{
-                    speak:0,
-                    court:0,
-                    flatr:0
-                },
-                xpr:{
-                    decor:0,
-                    instr:0,
-                    voice:0
-                }
+var skill={
+    start:{
+        sosh:{
+            dem:{
+                posur:0,
+                elegy:0,
+                presc:0
             },
-            phys:{
-                agl:{
-                    dance:0,
-                    reflx:0,
-                    flexi:0
-                },
-                wpn:{
-                    sword:0,
-                    archr:0,
-                    poler:0
-                },
-                ath:{
-                    runnr:0,
-                    climb:0,
-                    swimr:0
-                },
-                ani:{
-                    horse:0,
-                    dogee:0,
-                    falco:0
-                }
+            con:{
+                speak:0,
+                court:0,
+                flatr:0
             },
-            intl:{
-                hst:{
-                    novan:0,
-                    forgn:0,
-                    world:0
-                },
-                int:{
-                    intrn:0,
-                    intel:0,
-                    ciphr:0
-                },
-                med:{
-                    herbs:0,
-                    field:0,
-                    poisn:0
-                },
-                eco:{
-                    accnt:0,
-                    trade:0,
-                    prdct:0
-                },
-                mil:{
-                    strat:0,
-                    naval:0,
-                    lgstc:0
-                }
-            },
-            mage:{
-                fth:{
-                    medit:0,
-                    divin:0,
-                    lorer:0
-                },
-                lum:{
-                    sense:0,
-                    rsist:0,
-                    wield:0
-                }
-
+            xpr:{
+                decor:0,
+                instr:0,
+                voice:0
             }
         },
+        phys:{
+            agl:{
+                dance:0,
+                reflx:0,
+                flexi:0
+            },
+            wpn:{
+                sword:0,
+                archr:0,
+                poler:0
+            },
+            ath:{
+                runnr:0,
+                climb:0,
+                swimr:0
+            },
+            ani:{
+                horse:0,
+                dogee:0,
+                falco:0
+            }
+        },
+        intl:{
+            hst:{
+                novan:0,
+                forgn:0,
+                world:0
+            },
+            int:{
+                intrn:0,
+                intel:0,
+                ciphr:0
+            },
+            med:{
+                herbs:0,
+                field:0,
+                poisn:0
+            },
+            eco:{
+                accnt:0,
+                trade:0,
+                prdct:0
+            },
+            mil:{
+                strat:0,
+                naval:0,
+                lgstc:0
+            }
+        },
+        mage:{
+            fth:{
+                medit:0,
+                divin:0,
+                lorer:0
+            },
+            lum:{
+                sense:0,
+                rsist:0,
+                wield:0
+            }
+
+        }
+    },
     current:{
         sosh:{
             dem:{
-                posur:102,
+                posur:0,
                 elegy:0,
                 presc:0
             },
@@ -248,6 +248,7 @@
 }
 
 //willful/yielding wy pressured/alone pa cheerful/depressed cd angry/afraid aa
+
 var mood={
     start:{
         wy:0,
@@ -263,6 +264,9 @@ var mood={
     }
 }
 
+
+
 module.exports={
-    skill:skill
+    skill:skill,
+    mood:mood
 };

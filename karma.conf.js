@@ -2,35 +2,35 @@ module.exports=function(config) {
 
     config.set({
 
-        // Sample Testacular configuration file, that contain pretty much all the available options
-        // It's used for running client tests on Travis (http://travis-ci.org/#!/karma-runner/karma)
-        // Most of the options can be overriden by cli arguments (see karma --help)
-        //
-        // For all available config options and default values, see:
-        // https://github.com/karma-runner/karma/blob/stable/lib/config.js#L54
+            // Sample Testacular configuration file, that contain pretty much all the available options
+            // It's used for running client tests on Travis (http://travis-ci.org/#!/karma-runner/karma)
+            // Most of the options can be overriden by cli arguments (see karma --help)
+            //
+            // For all available config options and default values, see:
+            // https://github.com/karma-runner/karma/blob/stable/lib/config.js#L54
 
 
 // base path, that will be used to resolve files and exclude
-        basePath:'./',
+            basePath: './',
 
-        frameworks:[
-            'browserify',
-            'jasmine'
-        ],
+            frameworks: [
+                'browserify',
+                'jasmine'
+            ],
 
-        browserify:[
-
-        ],
+            browserify: {
+            debug: true
+        },
 
 // list of files / patterns to load in the browser
-        files:[
-            '*-spec.js'
-        ],
+    files:[
+        '*-spec.js'
+    ],
 
 // list of files to exclude
         exclude:[
 
-        ],
+    ],
 
 // use dots reporter, as travis terminal does not support escaping sequences
 // possible values: 'dots', 'progress', 'junit', 'teamcity'
@@ -70,8 +70,8 @@ module.exports=function(config) {
         reportSlowerThan:500,
 
 // compile coffee scripts
-    preprocessors:{
+        preprocessors:{
         '*.js': 'browserify'
     }
-    });
+});
 };

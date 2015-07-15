@@ -2,23 +2,24 @@
 
 var variables=require('./variables');
 
-// skill area
+// week transition
 
 
 
-// mood area
+// SKILLS
 
-var Mood=function(){
-    var angry=0;
-    this.setAngry=function(val){
-        angry=val;
-    }
-    this.getAngry=function(){
-        return angry;
-    }
-    Object.defineProperty(this, 'angry', {get:this.getAngry, set:this.setAngry})
-    Object.defineProperty(this, 'afraid', {get:function(val){return -angry;}, set:function(val){angry=-val;}})
-    return this;
+// skill growth
+
+function skilGrow(am, pm) {
+
 }
 
-module.exports={'Mood':Mood}
+// skill check
+
+function skilChk(skil, min) {
+    return skil > min;
+
+}
+
+// MOODS
+
